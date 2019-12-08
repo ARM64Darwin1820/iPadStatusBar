@@ -1,10 +1,9 @@
-Package: com.noisyflake.ipadstatusbar
-Name: iPadStatusBar
+Package: com.arm64darwin1820.a12customresfix
+Name: A12CustomResFix
 Depends: mobilesubstrate
-Version: 1.1.6
+Version: 1.0
 Architecture: iphoneos-arm
-Description: Enables the iOS 12 iPad Statusbar on all devices
-Depiction: https://apt.noisyflake.com/depictions/index.html?id=com.noisyflake.ipadstatusbar
-Maintainer: NoisyFlake
-Author: NoisyFlake
+Description: Fixes custom resolutions on A12 by forcing the UIStatusBarVisualProvider to choose the one for notched devices. Warning! When setting a custom resolution always set it to default oece SpringBoard is loaded. Otherwise you can not get into SafeMode and will      have to restore in case of a reboot! Based on iPadStatusBar by NoisyFlake
+Maintainer: Arm64Darwin1820
+Author: Arm64Darwin1820
 Section: Tweaks

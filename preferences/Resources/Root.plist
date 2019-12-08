@@ -5,200 +5,34 @@
 	<key>items</key>
 	<array>
 		<dict>
-			<key>cell</key>						<string>PSGroupCell</string>
-			<key>footerCellClass</key>			<string>iPadStatusBarLogo</string>
- 		</dict>
-
- 		<dict>
-			<key>cell</key> 					<string>PSGroupCell</string>
-			<key>footerText</key> 				<string>Respring required. Extra Padding requires iOS 12.1+</string>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Respring required. Requires iOS 12.1+</string>
 		</dict>
 		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>enabled</string>
-			<key>label</key>					<string>Enable</string>
-		</dict>
-
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<false/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>extraPadding</string>
-			<key>label</key>					<string>Extra Padding</string>
-		</dict>
-
-		<dict>
-			<key>cell</key> 					<string>PSGroupCell</string>
-			<key>label</key> 					<string>Show Items</string>
-			<key>footerText</key> 				<string>* Respring required</string>
-		</dict>
-
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showActivity</string>
-			<key>label</key>					<string>Activity Indicator</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.arm64darwin1820.a12customresfix</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enable</string>
+			<key>PostNotification</key>
+			<string>com.arm64darwin1820.a12customresfix/prefsupdated</string>
 		</dict>
 		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showAirplane</string>
-			<key>label</key>					<string>Airplane Mode</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Developed by Arm64Darwin1820 based on iPadStatusBar by NoisyFlake</string>
+			<key>footerAlignment</key>
+			<string>1</string>
 		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showAlarm</string>
-			<key>label</key>					<string>Alarm</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showBattery</string>
-			<key>label</key>					<string>Battery Icon *</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showBatteryPercent</string>
-			<key>label</key>					<string>Battery Percentage</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showBatteryPercentSign</string>
-			<key>label</key>					<string>Battery Percent Sign *</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showBreadcrumb</string>
-			<key>label</key>					<string>Breadcrumb</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showCarrier</string>
-			<key>label</key>					<string>Carrier</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showData</string>
-			<key>label</key>					<string>Data Network *</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showDate</string>
-			<key>label</key>					<string>Date</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showDND</string>
-			<key>label</key>					<string>Do not Disturb</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showLocationServices</string>
-			<key>label</key>					<string>Location Services</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showLockIcon</string>
-			<key>label</key>					<string>Lock Icon</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showRotationLock</string>
-			<key>label</key>					<string>Rotation Lock</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showSignal</string>
-			<key>label</key>					<string>Signal Strength *</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showTime</string>
-			<key>label</key>					<string>Time *</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showVPN</string>
-			<key>label</key>					<string>VPN</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-		<dict>
-			<key>cell</key>						<string>PSSwitchCell</string>
-			<key>default</key>					<true/>
-			<key>defaults</key>					<string>com.noisyflake.ipadstatusbar</string>
-			<key>key</key>						<string>showWifi</string>
-			<key>label</key>					<string>WiFi *</string>
-			<key>PostNotification</key> 		<string>com.noisyflake.ipadstatusbar/prefsupdated</string>
-		</dict>
-
-		<dict>
-			<key>cell</key> 					<string>PSGroupCell</string>
-			<key>label</key> 					<string>Buy me a coffee</string>
-		</dict>
-		<dict>
-			<key>cell</key> 					<string>PSButtonCell</string>
-			<key>action</key> 					<string>paypal</string>
-			<key>label</key> 					<string>Donate via PayPal</string>
-		</dict>
-
-		<dict>
-			<key>cell</key> 					<string>PSGroupCell</string>
-			<key>footerText</key> 				<string>Developed with ♥ by NoisyFlake</string>
-			<key>footerAlignment</key> 			<string>1</string>
-		</dict>
-
-
 	</array>
-
 	<key>title</key>
 	<string></string>
 </dict>
