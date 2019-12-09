@@ -3,18 +3,23 @@
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 
-static BOOL enabled;
+static BOOL enabled, sixonebar, sixfivebar, fuckmeupfam;
 
 
 %hook _UIStatusBarVisualProvider_iOS
 + (Class)visualProviderSubclassForScreen:(id)arg1 {
-  if (enabled) {
+  if (enabled && sixonebar && !sixfivebar) {
+      return NSClassFromString(@"_UIStatusBarVisualProvider_Split61");
+    } else if (enabled && sixfivebar && !sixonebar) {
+      return NSClassFromString(@"_UIStatusBarVisualProvider_Split65");
+    } else if (enabled && fuckmeupfam && !sixonebar && !sixfivebar) {
+      return NSClassFromString(@"_UIStatusBarVisualProvider_SplitFuckMeUp");
+    } else if (enabled) {
       return NSClassFromString(@"_UIStatusBarVisualProvider_Split58");
     } else {
       return %orig;
     }
 }
-
 %end
 
 
@@ -25,6 +30,9 @@ static void loadPrefs() {
 
   if (prefs) {
     enabled = ( [prefs objectForKey:@"enabled"] ? [[prefs objectForKey:@"enabled"] boolValue] : YES );
+    sixonebar = ( [prefs objectForKey:@"sixonebar"] ? [[prefs objectForKey:@"sixonebar"] boolValue] : YES );
+    sixfivebar = ( [prefs objectForKey:@"sixfivebar"] ? [[prefs objectForKey:@"sixfivebar"] boolValue] : YES );
+    fuckmeupfam = ( [prefs objectForKey:@"fuckmeupfam"] ? [[prefs objectForKey:@"fuckmeupfam"] boolValue] : YES );
   }
 
 }

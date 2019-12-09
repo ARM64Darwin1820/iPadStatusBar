@@ -8,7 +8,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Respring required. Requires iOS 12.1+</string>
+			<string>Respring required. Requires iOS 12.1+ and uses the 5.8&quot; device status bar by default</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -27,8 +27,76 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+			<key>label</key>
+			<string> Use the 6.1&quot; device status bar</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.arm64darwin1820.a12customresfix</string>
+			<key>key</key>
+			<string>sixonebar</string>
+			<key>label</key>
+			<string>Use the 6.1&quot; bar</string>
+			<key>PostNotification</key>
+			<string>com.arm64darwin1820.a12customresfix/prefsupdated</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string> Use the 6.5&quot; device status bar</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.arm64darwin1820.a12customresfix</string>
+			<key>key</key>
+			<string>sixfivebar</string>
+			<key>label</key>
+			<string>Use the 6.5&quot; bar</string>
+			<key>PostNotification</key>
+			<string>com.arm64darwin1820.a12customresfix/prefsupdated</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Fuck me up fam</string>
 			<key>footerText</key>
-			<string>Developed by Arm64Darwin1820 based on iPadStatusBar by NoisyFlake</string>
+			<string>Causes respring loop on iOS 12! On iOS 13 causes a red error bar to be displayed instead of the status bar. For testing only!</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.arm64darwin1820.a12customresfix</string>
+			<key>key</key>
+			<string>fuckmeupfam</string>
+			<key>label</key>
+			<string>Fuck me up fam</string>
+			<key>PostNotification</key>
+			<string>com.arm64darwin1820.a12customresfix/prefsupdated</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable one option at a time! If you select more than one of the other options it will use the 5.8&quot; bar. All options require the tweak to be enabled. </string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Developed by Arm64Darwin1820, based on iPadStatusBar by NoisyFlake</string>
 			<key>footerAlignment</key>
 			<string>1</string>
 		</dict>
