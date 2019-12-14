@@ -105,9 +105,13 @@ NSTimer *resetTimer;
                 
                 pid_t pidtwo;
 
-                const char* argstwo[] = {"killall", "backboardd", NULL};
+                const char* argstwo[] = {"killall", "cfprefsd", NULL};
 
                 posix_spawn(&pidtwo, "/usr/bin/killall", NULL, NULL, (char* const*)argstwo, NULL);
+                
+                pid_t pidthree;
+                const char* argsthree[] = {"killall", "backboardd", NULL};
+                posix_spawn(&pidthree, "/usr/bin/killall", NULL, NULL, (char* const*)argsthree, NULL);
             }
             powerPressed = NO;
         }
