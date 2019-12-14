@@ -95,6 +95,30 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.arm64darwin1820.a12customresfix</string>
+			<key>key</key>
+			<string>safeguard</string>
+			<key>label</key>
+			<string>Enable Safeguard</string>
+			<key>PostNotification</key>
+			<string>com.arm64darwin1820.a12customresfix/prefsupdated</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>The safeguard feature will reset your resolution if you hold the power button for 3 seconds! Only enable when messing with the resolution and only tested with the tweak System Info installed. WIthout that tweak it should delete the resolution file, but I did not test that yet</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 			<key>footerText</key>
 			<string>Developed by Arm64Darwin1820, based on iPadStatusBar by NoisyFlake</string>
 			<key>footerAlignment</key>

@@ -1,6 +1,13 @@
+#export SDK=$(THEOS)/sdks/iPhoneOS11.2.sdk
+#export TARGET = simulator:clang
+#ARCHS = x86_64
+
 export THEOS_PLATFORM_SDK_ROOT=$(THEOS)/sdks/iPhoneOS11.2.sdk
 ARCHS = arm64 arm64e
+
 FINALPACKAGE=1
+DEBUG=0
+GO_EASY_ON_ME=1
 
 
 include $(THEOS)/makefiles/common.mk
